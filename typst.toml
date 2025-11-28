@@ -1,0 +1,25 @@
+# for a description of available keys, see https://github.com/typst/packages/?tab=readme-ov-file#package-format
+
+[package]
+name = "havard-resume"
+version = "0.0.1"
+entrypoint = "src/lib.typ"
+authors = ["caphefalumi <https://github.com/caphefalumi>"]
+license = "MIT"
+description = "A basic resume for typst, designed to work well with ATS systems.."
+repository = "https://github.com/caphefalumi/typst-havard-resume"
+keywords = ["cv", "resume", "havard"]
+categories = ["cv"]
+exclude = [
+	".github",
+	"docs",
+	"scripts",
+	"tests",
+	".typstignore",
+	"Justfile",
+]
+
+[template]
+path = "template"
+entrypoint = "main.typ"
+thumbnail = "thumbnail.png"
